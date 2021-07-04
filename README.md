@@ -10,7 +10,7 @@
   <a href="https://www.java.com">
     <img src="https://img.shields.io/badge/java_version-1.8.0-red">
   </a>
-  <a href="https://github.com/tiagorlampert/sAINT/blob/master/LICENSE">
+  <a href="https://github.com/Ferius057/OnlineToStatus/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/License-Apache%20License%202.0-yellow.svg">
   </a>
   <p align="center">
