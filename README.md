@@ -127,3 +127,10 @@ time_format: "dd.MM.yyyy HH:mm:ss"
  - [JRE](https://www.oracle.com/java/technologies/javase-jre8-downloads.html)
  > По всем вопросам/предложениям:
  - [Author](https://vk.me/ferius_057)
+
+<hr>
+
+## Screenshot:
+<a href='https://github.com/Ferius057/OnlineToStatus' title=''><img style="width:100%" src='https://ibb.co/LPnbNTS' alt=''  /></a>
+<a href='https://github.com/Ferius057/OnlineToStatus' title=''><img style="width:100%" src='https://ibb.co/zSzJFSW' alt=''  /></a>
+<a href='https://github.com/Ferius057/OnlineToStatus' title=''><img style="width:100%" src='https://ibb.co/mG7TPqP' alt=''  /></a>
