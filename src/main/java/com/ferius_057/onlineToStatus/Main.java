@@ -4,6 +4,7 @@ import com.ferius_057.onlineToStatus.minecraft.Online;
 import com.ferius_057.onlineToStatus.vkApi.Status;
 
 import java.io.*;
+import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -11,6 +12,8 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
         File file = new File("config.yml");
+
+        createFileHelp();
 
         // проверка существует ли файл конфигрурации или нет
         if (!file.exists()) {
@@ -22,7 +25,6 @@ public class Main {
         }
         else System.out.println("Файл конфигруции существует.");
 
-        createFileHelp();
 
         // получаение данные из конфига
         new Config().get(file);
@@ -87,10 +89,11 @@ public class Main {
     }
 
     private static void createFileHelp() throws IOException {
-        File fileHelpResources = new File(Objects.requireNonNull(Main.class.getClassLoader().getResource("help.yml")).getFile());
+        InputStream in = Main.class.getResourceAsStream("/help.yml");
 
         StringBuilder result = new StringBuilder();
-        try(FileReader reader = new FileReader(fileHelpResources)) {
+        assert in != null;
+        try(BufferedReader reader = new BufferedReader(new InputStreamReader(in))) {
             int i;
             while((i=reader.read())!=-1){
 
