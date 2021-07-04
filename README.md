@@ -55,7 +55,7 @@ $ java -jar OnlineToStatus.jar
   
 ```bash
 
-После скачиваниия OnlineToStatus.jar:
+После скачивания OnlineToStatus.jar:
 
 java -jar OnlineToStatus.jar
 ```
