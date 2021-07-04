@@ -131,6 +131,6 @@ time_format: "dd.MM.yyyy HH:mm:ss"
 <hr>
 
 ## Screenshot:
-<a href='https://github.com/Ferius057/OnlineToStatus' title=''><img style="width:100%" src='https://ibb.co/LPnbNTS' alt=''  /></a>
-<a href='https://github.com/Ferius057/OnlineToStatus' title=''><img style="width:100%" src='https://ibb.co/zSzJFSW' alt=''  /></a>
-<a href='https://github.com/Ferius057/OnlineToStatus' title=''><img style="width:100%" src='https://ibb.co/mG7TPqP' alt=''  /></a>
+<a href='' title=''><img style="width:100%" src='https://i.ibb.co/dcG1mNB/2021-07-05-01-21.png' alt=''  /></a>
+<a href='' title=''><img style="width:100%" src='https://i.ibb.co/WcLt0cN/image.png' alt=''  /></a>
+<a href='' title=''><img style="width:100%" src='https://i.ibb.co/0c32zMz/IMG-20210705-013505.jpg' alt=''  /></a>
