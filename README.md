@@ -15,7 +15,7 @@
   </a>
   <p align="center">
   <a href="https://github.com/Ferius057/OnlineToStatus/releases/download/1.0/OnlineToStatus.jar">
-    <img src="https://img.shields.io/github/downloads/Ferius057/OnlineToStatus/total?color=%2366ff00&label=%D0%A1%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C">
+    <img src="https://img.shields.io/github/downloads/Ferius057/OnlineToStatus/total?color=2366ff00">
   <a href="https://www.donationalerts.com/r/ferius_057">
     <img src="https://img.shields.io/badge/Donate-DonationAlerts-orange.svg">
   </a>
@@ -50,7 +50,7 @@ $ java -jar OnlineToStatus.jar
 #### Windows:
 > (Не проверялось)
   <a href="https://github.com/Ferius057/OnlineToStatus/releases/download/1.0/OnlineToStatus.jar">
-    <img src="https://img.shields.io/github/downloads/Ferius057/OnlineToStatus/total?color=%2366ff00&label=%D0%A1%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C&style=for-the-badge">
+    <img src="https://img.shields.io/github/downloads/Ferius057/OnlineToStatus/total?color=2366ff00">
   </a>
   
 ```bash
