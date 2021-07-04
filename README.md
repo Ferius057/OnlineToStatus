@@ -44,6 +44,8 @@ $ chmod +x OnlineToStatus.jar
 
 # Запуск скрипта
 $ java -jar OnlineToStatus.jar
+
+# Рядом с OnlineToStatus.jar будет config.yml, его надо будет настроить.
 ```
 #### Windows:
 > (Не проверялось)
