@@ -13,11 +13,11 @@ public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
         File file = new File("config.yml");
 
-        createFileHelp();
+        createFileHelp("help.yml");
 
         // проверка существует ли файл конфигрурации или нет
         if (!file.exists()) {
-            new Config().create(file);
+            createFileHelp("config.yml");
             System.out.println("Файл конфигурации был создан, перезапустите скрипт.");
             System.out.println("press [ENTER] key to continue....");
             new Scanner(System.in).nextLine();
@@ -88,8 +88,8 @@ public class Main {
         }
     }
 
-    private static void createFileHelp() throws IOException {
-        InputStream in = Main.class.getResourceAsStream("/help.yml");
+    private static void createFileHelp(String fileName) throws IOException {
+        InputStream in = Main.class.getResourceAsStream("/" + fileName);
 
         StringBuilder result = new StringBuilder();
         assert in != null;
@@ -101,10 +101,10 @@ public class Main {
             }
         }
 
-        File fileHelp = new File("help.yml");
+        File fileHelp = new File(fileName);
 
         if (fileHelp.createNewFile()) {
-            System.out.println("Создал файл инструкции: help.yml.");
+            System.out.println("Создал файл: " + fileName + ".");
         }
 
         try (Writer out = new BufferedWriter(new OutputStreamWriter(

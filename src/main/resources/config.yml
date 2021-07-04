@@ -1,0 +1,12 @@
+# Создатель скрипта: https://vk.com/ferius_057
+# Подробную информацию можно получить в файле help.yml
+
+vk:
+  group_id: "200934694"
+  user_token: "token"
+minecraft:
+  ip: "ip"
+  port: 25565
+delay: 60
+statusText: "Online: %online% / %max_online% {%growth%} | %time%"
+time_format: "dd.MM.yyyy HH:mm:ss"

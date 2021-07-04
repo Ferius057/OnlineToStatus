@@ -13,34 +13,9 @@ public class Config {
     public static String ip = "0.0.0.0";
     public static int port = 25565;
 
-    public static long delay = 7000;
+    public static long delay = 60;
     public static String statusText = "text";
     public static String time_format = "";
-
-    public void create(File file) throws IOException {
-        FileConfiguration config = YamlConfiguration.loadConfiguration(file);
-        System.out.println("Создание файла конфигруции...");
-        // создание vk настроек
-        config.set("vk.group_id", "111111111");
-        config.set("vk.user_token", "token");
-
-        // создание minecraft настроек
-        config.set("minecraft.ip", "0.0.0.0");
-        config.set("minecraft.port", 25565);
-
-        // создание настроек задержки
-        config.set("delay", 7000);
-
-        // создание настроек текста в статусе
-        config.set("statusText", "text");
-
-        // создание настроек времени в статусе
-        config.set("time_format", "dd.MM.yyyy HH:mm:ss");
-
-        //сохранение
-        config.save(file);
-
-     }
 
     public void get(File file) {
         FileConfiguration config = YamlConfiguration.loadConfiguration(file);
