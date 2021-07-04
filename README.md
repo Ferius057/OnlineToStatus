@@ -63,7 +63,8 @@ java -jar OnlineToStatus.jar
 <hr>
 
 ## Config
-> Подробную информацию можно получить [ТУТ](https://github.com/Ferius057/OnlineToStatus/blob/main/src/main/resources/help.yml)
+> Подробную информацию по конфигу можно получить [ТУТ](https://github.com/Ferius057/OnlineToStatus/blob/main/src/main/resources/help.yml)<br>
+> Подробную информацию про формат даты можно получить [ТУТ](https://github.com/Ferius057/OnlineToStatus/blob/main/timeFormat.md)
 ```yml
 vk:
   # id группы где будет отображаться онлайн (id вводить только цифрами)
