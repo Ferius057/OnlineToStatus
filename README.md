@@ -45,7 +45,8 @@ $ chmod +x OnlineToStatus.jar
 # Запуск скрипта
 $ java -jar OnlineToStatus.jar
 
-# Рядом с OnlineToStatus.jar будет config.yml, его надо будет настроить.
+# После запуска рядом с OnlineToStatus.jar будет config.yml, его надо будет настроить.
+# Так же создаться help.yml, инструкция по настройке конфига. 
 ```
 #### Windows:
   <a href="https://github.com/Ferius057/OnlineToStatus/releases/download/1.0/OnlineToStatus.jar">
@@ -57,6 +58,10 @@ $ java -jar OnlineToStatus.jar
 # После скачивания OnlineToStatus.jar:
 # Рядом с OnlineToStatus.jar сделайте '.bat' файл и поместите туда команду:
 java -jar OnlineToStatus.jar
+
+# Для запуска скрипта запустите '.bat' файл.
+# После запуска рядом с OnlineToStatus.jar будет config.yml, его надо будет настроить.
+# Так же создаться help.yml, инструкция по настройке конфига. 
 ```
 
 <hr>
