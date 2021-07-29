@@ -142,8 +142,7 @@ time_format: "dd.MM.yyyy HH:mm:ss"
 <hr>
 
 ## Links:
- - [Java](https://www.java.com)
- - [JRE](https://www.oracle.com/java/technologies/javase-jre8-downloads.html)
+ - [Java 8](https://www.java.com)
  > По всем вопросам/предложениям:
  - Author: [Charles_Grozny](https://vk.me/ferius_057)
 
