@@ -145,7 +145,7 @@ time_format: "dd.MM.yyyy HH:mm:ss"
  - [Java](https://www.java.com)
  - [JRE](https://www.oracle.com/java/technologies/javase-jre8-downloads.html)
  > По всем вопросам/предложениям:
- - [Author](https://vk.me/ferius_057)
+ - Author: [Charles_Grozny](https://vk.me/ferius_057)
 
 <hr>
 
