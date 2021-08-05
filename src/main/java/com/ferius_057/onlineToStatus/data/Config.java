@@ -4,6 +4,7 @@ import configuration.file.FileConfiguration;
 import configuration.file.YamlConfiguration;
 
 import java.io.File;
+import java.io.IOException;
 
 public class Config {
     public static String version;
@@ -18,6 +19,7 @@ public class Config {
     public static String statusText = "text";
     public static String time_format = "";
 
+    static FileConfiguration records = YamlConfiguration.loadConfiguration(new File("records.yml"));
     public void get(File file) {
         FileConfiguration config = YamlConfiguration.loadConfiguration(file);
         version = config.getString("version");
@@ -30,7 +32,7 @@ public class Config {
         ip = config.getString("minecraft.ip");
         port = config.getInt("minecraft.port");
 
-        // получение данные настроек задержки
+        // получение данных настроек задержки
         delay = config.getLong("delay") * 1000;
 
         // получение настроек текста
@@ -38,5 +40,17 @@ public class Config {
 
         // получение настроек времени
         time_format = config.getString("time_format");
+
+        Data.record_all = records.getInt(Config.ip.replace(".",",") + "_" + Config.port + ".all");
+    }
+
+    public static void setRecord(int record) {
+        records.set(Config.ip.replace(".",",") + "_" + Config.port + ".all", record);
+
+        try {
+            records.save(new File("records.yml"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

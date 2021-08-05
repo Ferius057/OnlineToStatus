@@ -19,7 +19,7 @@ public class Updates {
 
         JsonObject[] test = new Gson().fromJson(reqURl, JsonObject[].class);
         String new_version = test[0].get("tag_name").getAsString().replace("\"","");
-        if (Data.version.equals(new_version)) {
+        if (!Data.version.equals(new_version)) {
             System.err.println("Найдено новое обновление! - " + new_version);
             System.err.println("Информация:\n" + test[0].get("body").getAsString());
             System.out.println();
