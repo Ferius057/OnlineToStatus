@@ -1,6 +1,6 @@
 # Создатель скрипта: https://vk.com/ferius_057
 # 𝓞𝓷𝓵𝓲𝓷𝓮𝓣𝓸𝓢𝓽𝓪𝓽𝓾𝓼
-version: 1.2
+version: 1.6
 
 
 # Подробную информацию можно получить в файле help.yml
@@ -11,5 +11,5 @@ minecraft:
   ip: "ip"
   port: 25565
 delay: 60
-statusText: "Online: %online% / %max_online% {%growth%} Hour: {%growth_hour%}, Рекорд онлайна за час: {%record_hour%} | %time%"
+statusText: "Online: %online% / %max_online% {%growth%} Hour: {%growth_hour%}, Рекорд онлайна за час: {%record_hour%} | %record_all% | %time%"
 time_format: "dd.MM.yyyy HH:mm:ss"

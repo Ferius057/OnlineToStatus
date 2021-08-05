@@ -5,7 +5,6 @@ import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
 import java.io.IOException;
-import java.util.Arrays;
 
 public class Updates {
     String url = "https://api.github.com/repos/Ferius057/OnlineToStatus/releases";

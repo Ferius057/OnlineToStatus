@@ -7,7 +7,7 @@
     <groupId>com.ferius_057.onlineToStatus</groupId>
     <artifactId>OnlineToStatus</artifactId>
     <packaging>jar</packaging>
-    <version>1.2</version>
+    <version>1.6</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

@@ -1,6 +1,5 @@
 package com.ferius_057.onlineToStatus.data;
 
-import configuration.InvalidConfigurationException;
 import configuration.file.FileConfiguration;
 import configuration.file.YamlConfiguration;
 
