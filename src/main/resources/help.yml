@@ -10,10 +10,10 @@ vk:
   group_id: "200934694"
   # Токен user'а от вк.
   # {Почему user токен? - Потому что так устроен вк, иначе никак.}
-  # {Где получить user токен? - https://vk.cc/c4F4lp}
+  # {Где получить user токен? - https://vk.cc/c3BXQy}
   #   1. После перехода по ссылке, VK Admin запросит доступ к группам -> "Разрешить"
   #   2. Скопируйте часть адресной строки от "access_token=" до "&expires_in" -> И этот токен вставляете в user_token
-  user_token: "4bbi4xjlowwx9ic1fmyi3wijodrixm8lbc2104kw0zwt8skziybdfujfov7ewxjzy9q1j5azfv5rhles2qtz"
+  user_token: "4bbi4xjlowwx9ic1fmyi3wijodrixm8lbc2104kw0zwt8skziybdfujfov7ewxjzy9q1j5azfv5rhles2qtzs"
 minecraft:
   # ip сервера с которого нужно получать онлайн
   ip: "mc.hypixel.net"
@@ -31,8 +31,7 @@ delay: 45
 # %time% - нынешнее время (не забудьте указать формат в 'time_format')
 # %growth_hour% - прирост онлайна за последний час (отсчёт начинается от запуска скрипта) (такой же как и %growth%, но этот показывает за последний час)
 # %record_hour% - рекорд онлайна за последний час (отсчёт начинается от запуска скрипта)
-# %record_all% - общий рекорд онлайна (можно самому указать в файле 'records.yml')
-statusText: "Online: %online% / %max_online% {%growth%} Hour: {%growth_hour%}, Рекорд онлайна за последний час: {%record_hour%} | %record_all% | %time%"
+statusText: "Online: %online% / %max_online% {%growth%} Hour: {%growth_hour%}, Рекорд онлайна за последний час: {%record_hour%} | %time%"
 # Формат даты для %time%
 # Подробную информацию можно получить тут: https://github.com/Ferius057/OnlineToStatus/blob/main/timeFormat.md
 time_format: "dd.MM.yyyy HH:mm:ss"
