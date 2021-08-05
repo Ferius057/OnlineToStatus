@@ -21,12 +21,22 @@ public class Main {
         new Updates().check();
 
         File file = new File("config.yml");
+        File records = new File("records.yml");
 
         createFileHelp("help.yml");
 
         // проверка существует ли файл конфигрурации или нет
-        if (!file.exists()) {
-            createFileHelp("config.yml");
+        if (!file.exists() || !records.exists()) {
+            if (!file.exists()) {
+                createFileHelp("config.yml");
+                System.out.println("Файл конфигурации был создан, перезапустите скрипт.");
+            }
+            if (!records.exists()) {
+                createFileHelp("records.yml");
+                System.out.println("Файл рекордов был создан, перезапустите скрипт.");
+            }
+            System.out.println("press [ENTER] key to continue....");
+            new Scanner(System.in).nextLine();
             return;
         }
         else System.out.println("\nФайл конфигруции существует.");
@@ -52,7 +62,7 @@ public class Main {
                         "\ndelay: " + Config.delay / 1000 +
                         "\ntext: " + Config.statusText +
                         "\n------------------------------------------\n");
-        //run();
+        run();
     }
 
     private static void run() throws InterruptedException {
@@ -94,9 +104,20 @@ public class Main {
 
             // Проверка рекорда/прироста за час
             if (Data.record_hour < online[0]) Data.record_hour = online[0];
-            int growthHour = online[0] - Data.record_hour;
-            String growthHourStr = ""+growthHour;
-            if (online[0] == growthHour) growthHourStr = ""+0;
+            if (Data.record_hour_old == 0) Data.record_hour_old = online[0];
+            int growthHour = online[0] - Data.record_hour_old;
+            String growthHourStr;
+            if (online[0] > Data.record_hour_old) growthHourStr = "+"+growthHour;
+            else growthHourStr = ""+growthHour;
+            if (online[0] == growthHour) {
+                growthHourStr = ""+0;
+            }
+
+            // Проверка общего рекорда
+            if (Data.record_all < online[0]) {
+                Data.record_all = online[0];
+                Config.setRecord(online[0]);
+            }
 
             // Установка статуса
             boolean status = new Status().setStatus(Config.statusText.replace("%online%", String.valueOf(online[0]))
@@ -104,12 +125,14 @@ public class Main {
                     .replace("%growth%", growthStr)
                     .replace("%growth_hour%", growthHourStr)
                     .replace("%record_hour%", String.valueOf(Data.record_hour))
+                    .replace("%record_all%", String.valueOf(Data.record_all))
                     .replace("%time%", formatForDateNow.format(new Date())));
             if (!status) {
                 last_online = -1;
             } else {
                 System.out.println("[" + new Date() + "] Обновил статус.");
                 last_online = online[0];
+                Data.work = true;
                 Thread.sleep(Config.delay);
             }
         }
@@ -138,11 +161,5 @@ public class Main {
                 new FileOutputStream(fileHelp), StandardCharsets.UTF_8))) {
             out.write(result.toString());
         }
-
-        if (fileName.equals("help.yml")) return;
-
-        System.out.println("Файл конфигурации был создан, перезапустите скрипт.");
-        System.out.println("press [ENTER] key to continue....");
-        new Scanner(System.in).nextLine();
     }
 }
