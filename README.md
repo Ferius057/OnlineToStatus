@@ -47,6 +47,7 @@
   <a href="https://github.com/Ferius057/OnlineToStatus/releases/download/1.0/OnlineToStatus.jar">
     <img src="https://img.shields.io/github/downloads/Ferius057/OnlineToStatus/total?color=2366ff00">
   </a>
+  
 ```bash
 # Для запуска скрипта
 $ java -jar OnlineToStatus.jar
@@ -54,6 +55,7 @@ $ java -jar OnlineToStatus.jar
 # После запуска рядом с OnlineToStatus.jar будет config.yml, его надо будет настроить.
 # Так же создаться help.yml, инструкция по настройке конфига. 
 ```
+
 #### Windows:
   <a href="https://github.com/Ferius057/OnlineToStatus/releases/download/1.0/OnlineToStatus.jar">
     <img src="https://img.shields.io/github/downloads/Ferius057/OnlineToStatus/total?color=2366ff00">
