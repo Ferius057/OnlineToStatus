@@ -1,7 +1,7 @@
 <h1 align="center">OnlineToStatus</h1>
 <p align="center">
-    <a href="https://github.com/Ferius057/OnlineToStatus/releases/tag/1.2">
-    <img src="https://img.shields.io/badge/Release-1.2-blue.svg">
+    <a href="https://github.com/Ferius057/OnlineToStatus/releases/tag/1.6">
+    <img src="https://img.shields.io/badge/Release-1.6-blue.svg">
   </a>
     </a>
     <a href="https://opensource.org/licenses/Apache-2.0">
@@ -14,7 +14,7 @@
     <img src="https://img.shields.io/badge/License-Apache%20License%202.0-yellow.svg">
   </a>
   <p align="center">
-  <a href="https://github.com/Ferius057/OnlineToStatus/releases/download/1.0/OnlineToStatus.jar">
+  <a href="https://github.com/Ferius057/OnlineToStatus/releases/download/1.6/OnlineToStatus.jar">
     <img src="https://img.shields.io/github/downloads/Ferius057/OnlineToStatus/total?color=2366ff00">
   <a href="https://www.donationalerts.com/r/ferius_057">
     <img src="https://img.shields.io/badge/Donate-DonationAlerts-orange.svg">
@@ -44,17 +44,11 @@
 
 ## Использование:
 #### Linux:
+  <a href="https://github.com/Ferius057/OnlineToStatus/releases/download/1.0/OnlineToStatus.jar">
+    <img src="https://img.shields.io/github/downloads/Ferius057/OnlineToStatus/total?color=2366ff00">
+  </a>
 ```bash
-Возможна установка и через .jar
-```
-```bash
-# Установка репозитория
-$ git clone https://github.com/Ferius057/OnlineToStatus.git
-
-# Перейти в репозиторий
-$ cd OnlineToStatus
-
-# Запуск скрипта
+# Для запуска скрипта
 $ java -jar OnlineToStatus.jar
 
 # После запуска рядом с OnlineToStatus.jar будет config.yml, его надо будет настроить.
@@ -105,10 +99,10 @@ vk:
   group_id: "200934694"
   # Токен user'а от вк.
   # {Почему user токен? - Потому что так устроен вк, иначе никак.}
-  # {Где получить user токен? - https://vk.cc/c3BXQy}
+  # {Где получить user токен? - https://vk.cc/c4F4lp}
   #   1. После перехода по ссылке, VK Admin запросит доступ к группам -> "Разрешить"
   #   2. Скопируйте часть адресной строки от "access_token=" до "&expires_in" -> И этот токен вставляете в user_token
-  user_token: "4bbi4xjlowwx9ic1fmyi3wijodrixm8lbc2104kw0zwt8skziybdfujfov7ewxjzy9q1j5azfv5rhles2qtzs"
+  user_token: "4bbi4xjlowwx9ic1fmyi3wijodrixm8lbc2104kw0zwt8skziybdfujfov7ewxjzy9q1j5azfv5rhles2qtz"
 minecraft:
   # ip сервера с которого нужно получать онлайн
   ip: "mc.hypixel.net"
@@ -126,7 +120,8 @@ delay: 45
 # %time% - нынешнее время (не забудьте указать формат в 'time_format')
 # %growth_hour% - прирост онлайна за последний час (отсчёт начинается от запуска скрипта) (такой же как и %growth%, но этот показывает за последний час)
 # %record_hour% - рекорд онлайна за последний час (отсчёт начинается от запуска скрипта)
-statusText: "Online: %online% / %max_online% {%growth%} Hour: {%growth_hour%}, Рекорд онлайна за последний час: {%record_hour%} | %time%"
+# %record_all% - общий рекорд онлайна (можно самому указать в файле 'records.yml')
+statusText: "Online: %online% / %max_online% {%growth%} Hour: {%growth_hour%}, Рекорд онлайна за последний час: {%record_hour%} | %record_all% | %time%"
 # Формат даты для %time%
 # Подробную информацию можно получить тут: https://github.com/Ferius057/OnlineToStatus/blob/main/timeFormat.md
 time_format: "dd.MM.yyyy HH:mm:ss"
@@ -151,7 +146,7 @@ time_format: "dd.MM.yyyy HH:mm:ss"
 <hr>
 
 ## Version
-> *Скрипта: 1.2*<br>
+> *Скрипта: 1.6*<br>
 > *VK Api: 5.130*
 
 <hr>
