@@ -44,7 +44,7 @@ public class FetchData {
         InputStream inputStream;
         InputStreamReader inputStreamReader;
 
-        int timeout = 3000;
+        int timeout = 8000;
         socket.setSoTimeout(timeout);
 
         socket.connect(host, timeout);
