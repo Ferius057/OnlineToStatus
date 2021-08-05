@@ -45,11 +45,12 @@
 <hr>
 
 ## Использование:
-#### Linux:
   <a href="https://github.com/Ferius057/OnlineToStatus/releases/download/1.6/OnlineToStatus.jar">
     <img src="https://img.shields.io/github/downloads/Ferius057/OnlineToStatus/total?color=6ff00">
   </a>
-  
+
+#### Linux:
+
 ```bash
 # Для запуска скрипта
 $ java -jar OnlineToStatus.jar
@@ -59,10 +60,7 @@ $ java -jar OnlineToStatus.jar
 ```
 
 #### Windows:
-  <a href="https://github.com/Ferius057/OnlineToStatus/releases/download/1.6/OnlineToStatus.jar">
-    <img src="https://img.shields.io/github/downloads/Ferius057/OnlineToStatus/total?color=6ff00">
-  </a>
-  
+
 ```bash
 
 # После скачивания OnlineToStatus.jar:
