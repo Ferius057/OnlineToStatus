@@ -15,7 +15,7 @@
   </a>
   <p align="center">
   <a href="https://github.com/Ferius057/OnlineToStatus/releases/download/1.6/OnlineToStatus.jar">
-    <img src="https://img.shields.io/github/downloads/Ferius057/OnlineToStatus/total?color=2366ff00">
+    <img src="https://img.shields.io/github/downloads/Ferius057/OnlineToStatus/total?color=6ff00">
   <a href="https://www.donationalerts.com/r/ferius_057">
     <img src="https://img.shields.io/badge/Donate-DonationAlerts-orange.svg">
   </a>
@@ -47,7 +47,7 @@
 ## Использование:
 #### Linux:
   <a href="https://github.com/Ferius057/OnlineToStatus/releases/download/1.6/OnlineToStatus.jar">
-    <img src="https://img.shields.io/github/downloads/Ferius057/OnlineToStatus/total?color=2366ff00">
+    <img src="https://img.shields.io/github/downloads/Ferius057/OnlineToStatus/total?color=6ff00">
   </a>
   
 ```bash
@@ -60,7 +60,7 @@ $ java -jar OnlineToStatus.jar
 
 #### Windows:
   <a href="https://github.com/Ferius057/OnlineToStatus/releases/download/1.6/OnlineToStatus.jar">
-    <img src="https://img.shields.io/github/downloads/Ferius057/OnlineToStatus/total?color=2366ff00">
+    <img src="https://img.shields.io/github/downloads/Ferius057/OnlineToStatus/total?color=6ff00">
   </a>
   
 ```bash
@@ -104,7 +104,7 @@ vk:
   # Токен user'а от вк.
   # {Почему user токен? - Потому что так устроен вк, иначе никак.}
   # {Где получить user токен? - https://vk.cc/c4F4lp}
-  #   1. После перехода по ссылке, VK Admin запросит доступ к группам -> "Разрешить"
+  #   1. После перехода по ссылке, Kate Mobile запросит доступ к группам -> "Разрешить"
   #   2. Скопируйте часть адресной строки от "access_token=" до "&expires_in" -> И этот токен вставляете в user_token
   user_token: "4bbi4xjlowwx9ic1fmyi3wijodrixm8lbc2104kw0zwt8skziybdfujfov7ewxjzy9q1j5azfv5rhles2qtz"
 minecraft:
