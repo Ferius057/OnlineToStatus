@@ -12,6 +12,7 @@ public class Status {
             String request = new Request().get("https://api.vk.com/method/status.set?text=" + URLEncoder.encode(text, "UTF-8") + "&group_id=" + Config.group_id + "&access_token=" + Config.token + "&v=5.130");
 
             if (request.contains("error")) {
+                // Переведено специально для тех кто не шарит в английском
                 if (request.contains("User authorization failed: invalid access_token")) {
                     System.err.println("ERROR: Ошибка авторизации пользователя, неверный token.");
                 } else if (request.contains("Access denied: you should be a group administrator")) {
