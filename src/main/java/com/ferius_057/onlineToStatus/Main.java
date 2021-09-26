@@ -44,17 +44,18 @@ public class Main {
         // получаение данные из конфига
         new Config().get(file);
 
-        if (Config.version == null) {
-            System.err.println("Неизвестная версия скрипта, пожалуйста обновите скрипт 'https://github.com/Ferius057/OnlineToStatus/tags' и удалите config.yml.");
+        if (Config.configVersion == null) {
+            System.err.println("Неизвестная версия скрипта, пожалуйста обновите скрипт 'https://github.com/Ferius057/OnlineToStatus/tags' и удалите config.yml\nпопробуйте удалить config.yml.");
             return;
-        } else if (!Data.version.equals(Config.version)) {
-            System.err.println("Версия скрипта не соответствует версией из конфига, удалите config.yml, не забудьте сохранить данные.");
+        } else if (Float.parseFloat(Data.configVersion) > Float.parseFloat(Config.configVersion)) {
+            System.err.println("У вас старая версия конфига, удалите config.yml, не забудьте сохранить данные.");
             return;
         }
 
         System.out.println("\n------------------------------------------" +
                         "\n\uD835\uDCDE\uD835\uDCF7\uD835\uDCF5\uD835\uDCF2\uD835\uDCF7\uD835\uDCEE\uD835\uDCE3\uD835\uDCF8\uD835\uDCE2\uD835\uDCFD\uD835\uDCEA\uD835\uDCFD\uD835\uDCFE\uD835\uDCFC" +
-                        "\nVersion: " + Config.version +
+                        "\nVersion: " + Data.version +
+                        "\nConfig version: " + Data.configVersion +
                         "\n" +
                         "\ntoken: " + Config.token +
                         "\nip: " + Config.ip +
@@ -104,10 +105,10 @@ public class Main {
 
             // Проверка рекорда/прироста за час
             if (Data.record_hour < online[0]) Data.record_hour = online[0];
-            if (Data.record_hour_old == 0) Data.record_hour_old = online[0];
-            int growthHour = online[0] - Data.record_hour_old;
+            if (Data.growth_hour == 0) Data.growth_hour = online[0];
+            int growthHour = online[0] - Data.growth_hour;
             String growthHourStr;
-            if (online[0] > Data.record_hour_old) growthHourStr = "+"+growthHour;
+            if (online[0] > Data.growth_hour) growthHourStr = "+"+growthHour;
             else growthHourStr = ""+growthHour;
             if (online[0] == growthHour) {
                 growthHourStr = ""+0;

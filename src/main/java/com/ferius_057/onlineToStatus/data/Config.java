@@ -7,7 +7,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class Config {
-    public static String version;
+    public static String configVersion;
 
     public static String group_id = "111111111";
     public static String token = "token";
@@ -22,7 +22,7 @@ public class Config {
     static FileConfiguration records = YamlConfiguration.loadConfiguration(new File("records.yml"));
     public void get(File file) {
         FileConfiguration config = YamlConfiguration.loadConfiguration(file);
-        version = config.getString("version");
+        configVersion = config.getString("configVersion");
 
         // получение данных вк
         group_id = config.getString("vk.group_id");

@@ -1,7 +1,7 @@
 <h1 align="center">OnlineToStatus</h1>
 <p align="center">
-    <a href="https://github.com/Ferius057/OnlineToStatus/releases/tag/1.6">
-    <img src="https://img.shields.io/badge/Release-1.6-blue.svg">
+    <a href="https://github.com/Ferius057/OnlineToStatus/releases/tag/1.6.1">
+    <img src="https://img.shields.io/badge/Release-1.6.1-blue.svg">
   </a>
     </a>
     <a href="https://opensource.org/licenses/Apache-2.0">
@@ -14,7 +14,7 @@
     <img src="https://img.shields.io/badge/License-Apache%20License%202.0-yellow.svg">
   </a>
   <p align="center">
-  <a href="https://github.com/Ferius057/OnlineToStatus/releases/download/1.6/OnlineToStatus.jar">
+  <a href="https://github.com/Ferius057/OnlineToStatus/releases/download/1.6.1/OnlineToStatus.jar">
     <img src="https://img.shields.io/github/downloads/Ferius057/OnlineToStatus/total?color=6ff00">
   <a href="https://www.donationalerts.com/r/ferius_057">
     <img src="https://img.shields.io/badge/Donate-DonationAlerts-orange.svg">
@@ -45,7 +45,7 @@
 <hr>
 
 ## Использование:
-  <a href="https://github.com/Ferius057/OnlineToStatus/releases/download/1.6/OnlineToStatus.jar">
+  <a href="https://github.com/Ferius057/OnlineToStatus/releases/download/1.6.1/OnlineToStatus.jar">
     <img src="https://img.shields.io/github/downloads/Ferius057/OnlineToStatus/total?color=6ff00">
   </a>
 
@@ -148,7 +148,7 @@ time_format: "dd.MM.yyyy HH:mm:ss"
 <hr>
 
 ## Version
-> *Скрипта: 1.6*<br>
+> *Скрипта: 1.6.1*<br>
 > *VK Api: 5.130*
 
 <hr>

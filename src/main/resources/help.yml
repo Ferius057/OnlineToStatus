@@ -32,7 +32,7 @@ delay: 45
 # %growth_hour% - прирост онлайна за последний час (отсчёт начинается от запуска скрипта) (такой же как и %growth%, но этот показывает за последний час)
 # %record_hour% - рекорд онлайна за последний час (отсчёт начинается от запуска скрипта)
 # %record_all% - общий рекорд онлайна (можно самому указать в файле 'records.yml')
-statusText: "Online: %online% / %max_online% {%growth%} Hour: {%growth_hour%}, Рекорд онлайна за последний час: {%record_hour%} | %record_all% | %time%"
+statusText: "Online: %online% / %max_online% {%growth%} Hour: {%growth_hour%}, Рекорд онлайна за час: {%record_hour%} | Общий рекорд онлайна: {%record_all%} | %time%"
 # Формат даты для %time%
 # Подробную информацию можно получить тут: https://github.com/Ferius057/OnlineToStatus/blob/main/timeFormat.md
 time_format: "dd.MM.yyyy HH:mm:ss"
